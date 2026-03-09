@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my profile</title>
+ 
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /*{
+    border: 1px solid brown;
+}*/
+body{
+             
+            background-color: rgba(33, 36, 33);
+        color: white;
+        height: 1000px;
+        width: 100%;
+        
+          
+}
+       
+       .titlepara{
+        font-size: 55px;
+        font-family: arial;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px wheat;
+       }
+.myimg{
+    background-image: url("/avantika.jpg");
+    background-size: cover;
+    height:400px;
+    width:300px;
+}
+.hr1{
+    width: 80px;
+    color: rgb(232, 161, 29);
+   
+}
+.bi-arrow-down-circle{
+    font-size: 40px;
+     border: none;
+    margin-right: 500px;
+    margin-left:80px ;
+}
+.scroll{
+    font-size: 15px;
+    margin-right: 20px;
+}
+.img-box {
+    
+    position: relative;
+    color: white;
+    padding: 40px;
+    z-index: 1;
+    
+}
+
+/* Background image with opacity */
+.img-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    height: 350px;
+    width: 300px;
+    background-image: url("/geometric_shape.svg");
+    background-size: cover;
+    background-position: center;
+    opacity: 20%;          /* ONLY image */
+    z-index: -1;
+    text-align: center;
+
+}
+.button{
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 2px solid black;
+    margin-top: 35px;
+    margin-left: 40px;
+    background: none;
+
+}
+.button:hover{
+    background-color: white;
+    color: black;
+}
+.icon{
+    word-spacing: 10px;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 60px;
+    color: bisque;
+    width: 150px;
+}
+.para{
+    padding-left: 80px;
+    padding-right: 40px;
+}
+.background{
+    background-color: white;
+    margin-top: 100px;
+    height: 1000px;
+    color: black;
+}
+.subpara{
+    margin-top: 100px;
+}
+.button-view{
+   padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 2px solid black;
+    margin-top: 30px;
+    margin-left: 40px;
+    background: none;
+ 
+}
+.button-view:hover{
+    background-color:black;
+    color: white;
+}
+.para-2{
+   margin-top: 130px; 
+   padding-left: 30px;
+   padding-right: 30px;
+}
+.background-2{
+    background-color: rgb(236, 229, 222);
+    height: 1100px;
+}
+.suppara{
+   margin-top: 100px;  
+}
+.para-3{
+    margin-top: 100px;  
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: none;
+    
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    font-size: 28px;
+    font-weight: 600;
+    border: 1px solid #dad8d4;
+    background-color: #efe7d9;
+    color: black;
+}
+
+.box:hover {
+    background-color: #e2c99d;
+}
+.img-21{
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    margin-top: 40px;
+}
+.img-22{
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    margin-top: 40px;
+}
+.img-23{
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    margin-top: 40px;
+}
+.background-3{
+    background-color:rgba(33, 36, 33); 
+    height: 600px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.caption{
+    margin-top: 20px;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: arial;
+    color: rgb(253, 241, 227);
+}
+.title{
+    margin-top: 40px;
+    font-size: 30px;
+    color: rgb(253, 241, 227);
+}
+.button-lets{
+    margin-top: 10px;
+    padding: 20px;
+    background-color: orange;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: arial;
+}
+.button-lets:hover{
+   background-color: rgb(240, 200, 126);
+}
+.background-4{
+    background-color: rgb(27, 27, 27);
+    height: 1000px;
+}
+.recent{
+    padding-top: 100px;
+    text-align: center;
+    color: orange;
+    font-size: 25px;
+    font-family: arial;
+}
+.latest{
+    text-align: center;
+    font-size: 65px;
+    color: rgb(253, 241, 227);
+    font-weight: bold;
+    font-family: arial;
+}
+.background-5{
+    background-color:rgb(9, 9, 9);
+    height: 600px;
+    
+}
+
+
+
+.icon-1{
+    font-size: 25px;
+    margin-left:60px;
+    margin-top: 70px;
+    padding-left: 30px;
+    padding-right: 100px;
+    color: rgb(155, 147, 147) ;
+}
+    </style>
+   
+</head>
+<body class="container-fluid">
+    
+    <header class="py-5">
+        <nav>
+            
+            <span style="font-size: 18px; text-shadow: 1px 1px 1px wheat; padding-left: 40px; font-family:arial ; font-weight: bold";>AVANTIKA.</span>
+            <span style="font-size: 15px; font-family: arial;  color: gray; padding: 20px;" >About</span>
+            <span  style="font-size: 15px; font-family: arial;  color: gray; padding: 20px;">Services</span>
+            <span  style="font-size: 15px; font-family: arial;  color: gray; padding: 20px;">Journal</span>
+            <span  style="font-size: 15px; font-family: arial;  color: gray; padding: 20px;">Contact</span>
+             <button class="bg-warning p-3 border border-0 rounded rounded-1 fs-0 fw-bold " style="margin-left: 550px;">Lets Work Together</button>
+        </nav>
+
+    </header>
+    <section style="margin-top: 40px;">
+        <hr class="hr1" >
+        <span  style="font-size: 25px; text-shadow: 1px 1px 1px wheat;  font-family:arial ; font-weight: bold; margin-left: 70px;" >Hello, i'm AVANTIKA</span>
+        <br><br>
+        <div class="row">
+           <div style="padding-left:20px ;" class= "titlepara col-8">
+            <p>
+I create modern and responsive
+web interfaces that deliver
+great user experiences
+using front-end technologies.
+</p>
+    </h1>
+           </div> 
+                <div class= "myimg col-4">
+                    
+                </div>
+                <div>
+        <button class="bi bi-arrow-down-circle btn text-light"><span class="scroll">Scroll For Me</span> </button>
+         
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="subtitle col-4">
+               <div class="img-box">
+                <span class="text-warning fs-4  " style="margin-left: 50px; margin-bottom: 50px;">About</span>
+                <p style="font-size: 50px; font-family:arial; font-weight: bold; margin-left: 38px; color: rgb(236, 218, 196);">An inspiring headline about yourself.</p>
+               </div>
+              <button class="button">More About Me</button>
+              <div class="icon">
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-github"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-c-circle"></span>
+              </div>
+        
+
+
+            </div>
+            <div class="information col-8">
+                <div class="para">
+                                       <p class="fs-4" style="color: rgb(236, 230, 222); margin-left: 50px;">
+I am a passionate UI Developer with strong knowledge of HTML, CSS, JavaScript and Bootstrap. 
+I enjoy building modern and responsive websites that provide a smooth and engaging user experience.
+</p>
+
+<p class="fs-4" style="color: rgb(235, 227, 218); margin-left: 50px; margin-top: 40px;">
+My focus is on creating clean user interfaces, writing efficient front-end code, and designing 
+web pages that work perfectly on mobile, tablet and desktop devices.
+</p>
+
+<p class="fs-4" style="color: rgb(253, 241, 227); margin-left: 50px; margin-top: 40px;">
+Currently I am improving my skills in modern front-end technologies like JavaScript and React 
+while building personal projects to strengthen my UI development experience.
+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section>
+        <div class="background">
+            <div class="row" style="padding-left:40px ; padding-right: 40px;">
+                <div class="col-6">
+                    <div class="subpara">
+           <p class="fs-2 text-warning">Expertise</p>
+
+<p style="font-size: 70px; font-weight: bold; font-family: arial;">
+My key areas of expertise.
+</p>
+
+<p style="font-size: 25px;">
+As a UI Developer, I specialize in building responsive, modern, and user-friendly 
+web interfaces. I focus on clean code, performance, and creating engaging user 
+experiences using HTML, CSS, JavaScript, Bootstrap, and modern UI frameworks.
+</p>
+
+<button class="button-view">View All Projects</button>
+</div>
+</div>
+
+<div class="col-6">
+<div class="para-2">
+
+<h3 class="text-warning">1. 
+<span style="color: black; font-family: arial; font-size: 30px; font-weight: bold;">
+Responsive Web Design
+</span>
+</h3><br>
+
+<p style="font-size: 18px;">
+Creating fully responsive websites that work seamlessly across desktops, tablets, 
+and mobile devices using modern CSS techniques like Flexbox, Grid, and Bootstrap.
+</p><br><br>
+
+
+<h3 class="text-warning">2. 
+<span style="color: black; font-family: arial; font-size: 30px; font-weight: bold;">
+Frontend Development
+</span>
+</h3><br>
+
+<p style="font-size: 18px;">
+Developing interactive and dynamic user interfaces using HTML, CSS, JavaScript, 
+and modern libraries to deliver smooth and engaging user experiences.
+</p><br><br>
+
+
+<h3 class="text-warning">3. 
+<span style="color: black; font-family: arial; font-size: 30px; font-weight: bold;">
+UI Component Development
+</span>
+</h3><br>
+
+<p style="font-size: 18px;">
+Building reusable UI components such as navigation bars, cards, modals, 
+forms, and dashboards to maintain design consistency and improve 
+development efficiency.
+</p><br><br>
+
+
+<h3 class="text-warning">4. 
+<span style="color: black; font-family: arial; font-size: 30px; font-weight: bold;">
+Website Performance & Optimization
+</span>
+</h3><br>
+
+<p style="font-size: 18px;">
+Optimizing websites for faster load times, accessibility, and better SEO 
+performance by writing clean code, optimizing assets, and following 
+modern frontend best practices.
+</p>
+
+</div>
+</div>
+            </div>
+        </div>
+     </section>
+     <section>
+        <div class="background-2">
+            <div class="row" style="padding-left:40px ; padding-right: 40px;">
+                <div class="col-4">
+                 <div class="suppara">
+                    <p class="fs-3 text-warning fw-bold" style="margin-top:20px;">Projects</p>
+
+<p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size:55px; color:black; font-weight:bold;">
+Some projects I have built while learning UI development.
+</p>
+</div>
+</div>
+
+<div class="col-8">
+<div class="para-3">
+
+<blockquote align="justify">
+<p style="font-size:28px; font-family:arial; color:black;">
+I have worked on several front-end projects to improve my UI development skills. 
+These projects focus on building responsive layouts, interactive user interfaces 
+and improving the overall user experience.
+</p>
+</blockquote>
+
+<br><br>
+
+<blockquote align="justify">
+<p style="font-size:20px; font-family:arial; color:rgb(42,41,41);">
+Some of my projects include a responsive portfolio website, a Todo List application 
+built with JavaScript, and several UI components developed using Bootstrap. 
+These projects helped me understand DOM manipulation, responsive design, 
+and modern front-end development practices.
+</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+
+<br><br>
+
+<div class="container">
+
+<div class="box"> <i class="bi bi-code-slash"></i> Portfolio Website</div>
+
+<div class="box"> <i class="bi bi-cup-fill"></i> Coffe App</div>
+
+<div class="box active"> <i class="bi bi-person"></i> Login Form</div>
+
+<div class="box"> <i class="bi bi-cloud-sun"></i> Weather App</div>
+
+<div class="box"> <i class="bi bi-calculator"></i> EMI Clculator</div>
+
+<div class="box"> <i class="bi bi-calendar"></i> Event Landing Page</div>
+
+<div class="box"> <i class="bi bi-image"></i> Image Gallery</div>
+
+<div class="box"> <i class="bi bi-bootstrap"></i> Bootstrap UI</div>
+
+<div class="box"> <i class="bi bi-heart"></i> Hero Banners</div>
+
+<div class="box"> <i class="bi bi-window"></i> Dashboard UI</div>
+
+</div>
+
+</div>
+        </div>
+     </section>
+     <section>
+        <main>
+        <div class="background-3">
+            
+                <div class="caption">
+Looking for a UI Developer?
+</div>
+
+<div class="caption">
+Let's build something amazing together.
+</div>
+
+<div class="title">
+I am a passionate UI Developer who enjoys creating modern, <br>responsive and user-friendly web interfaces.
+If you have a project idea<br> or are looking for a front-end developer, feel free to connect with me.
+</div>
+
+<button class="button-lets">Let's Work Together</button>
+            </div>
+        </main>
+     </section>
+     <section>
+        <div class="background-4">
+           
+            <div class="recent">Technologies</div>
+<div class="latest">Tools and technologies I use for UI development.</div>
+
+<div class="row" style="padding-left:40px ; padding-right: 40px;">
+
+<div class="col-4">
+
+<div style="color: orange; font-weight: bold; margin-top: 100px;">Frontend</div>
+
+<div style="font-weight: bold; font-size: 32px; font-family: arial; color:rgb(253, 241, 227)">
+HTML & CSS
+</div>
+
+<p style="font-size: 23px; font-family: arial; color:rgb(155, 147, 147);">
+I build structured web pages using HTML5 and style them with modern CSS techniques
+including Flexbox, Grid and responsive design.
+</p>
+
+</div>
+
+
+
+<div class="col-4">
+
+<div style="color: orange; font-weight: bold; margin-top: 100px;">Programming</div>
+
+<div style="font-weight: bold; font-size: 32px; font-family: arial; color: rgb(253, 241, 227)">
+JavaScript
+</div>
+
+<p style="font-size: 23px; font-family: arial; color:rgb(155, 147, 147);">
+I use JavaScript to create dynamic and interactive user interfaces such as form
+validation, DOM manipulation and UI interactions.
+</p>
+
+</div>
+
+
+
+<div class="col-4">
+
+<div style="color: orange; font-weight: bold; margin-top: 100px;">Framework</div>
+
+<div style="font-weight: bold; font-size: 32px; font-family: arial; color: rgb(253, 241, 227)">
+Bootstrap
+</div>
+
+<p style="font-size: 23px; font-family: arial; color:rgb(155, 147, 147);">
+Bootstrap helps me design responsive layouts quickly using its grid system
+and ready-to-use UI components.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="col-4" style="margin-top: 30px;padding-left:40px ; padding-right: 40px;">
+
+<div style="color: orange; font-weight: bold;">Library</div>
+
+<div style="font-weight: bold; font-size: 32px; font-family: arial;color: rgb(253, 241, 227)">
+React
+</div>
+
+<p style="font-size: 23px; font-family: arial; color:rgb(155, 147, 147);">
+I am learning React to build modern single page applications and reusable
+UI components for scalable front-end development.
+</p>
+
+</div>
+         </div>
+           </section>
+
+     <footer>
+        <div class="background-5">
+            
+        <div class="row" style="padding-left:40px ; padding-right: 40px;">
+
+<div class="col-6">
+
+<div style="font-size: 30px; font-family: arial; font-weight: bold; color: rgb(253, 241, 227); margin-top: 20px;">
+About Avantika
+</div>
+
+<p style="font-size: 20px; font-family: arial; color:rgb(155, 147, 147); margin-top: 30px;">
+I am a passionate UI Developer focused on building responsive and modern web interfaces.
+I work with HTML, CSS, JavaScript, Bootstrap and React to create user-friendly websites
+that provide a smooth and engaging user experience.
+</p>
+
+</div>
+
+
+
+<div class="col-3">
+
+<div style="font-size: 30px; font-family: arial; font-weight: bold; color: rgb(253, 241, 227); margin-left: 100px ;margin-top: 20px;">
+Site Links
+</div>
+
+<div style="margin-left: 100px; margin-top: 30px ; font-size: 20px; color: rgb(155, 147, 147) ; font-family: arial">
+
+<nav>Home</nav>
+<nav>About</nav>
+<nav>Skills</nav>
+<nav>Projects</nav>
+<nav>Contact</nav>
+
+</div>
+
+</div>
+
+
+
+<div class="col-3">
+
+<div style="font-size: 30px; font-family: arial; font-weight: bold; color: rgb(253, 241, 227); margin-left: 30px; margin-top: 20px">
+Contact
+</div>
+
+<p style="font-size: 19px; font-family: arial; color:rgb(155, 147, 147); margin-left: 30px">
+Email: avantika@email.com <br>
+Location: Hyderabad, India
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="icon-1">
+
+<span class="bi bi-facebook"></span>
+<span class="bi bi-github"></span>
+<span class="bi bi-instagram"></span>
+<span class="bi bi-linkedin"></span>
+
+</div>
+
+
+
+<div style="margin-left:800px;">
+
+<span class="bi bi-c-circle" style="font-size: 18px; color:rgb(155, 147, 147);">
+© 2026 Avantika Portfolio
+</span>
+
+<br>
+
+<span style="color: rgb(155, 147, 147);">
+UI Developer Portfolio
+</span>
+
+</div>
+        </div>
+     </footer>
+    
+</body>
+</html> 
